@@ -1,26 +1,19 @@
 import React from 'react';
 import './App.css';
+import Header from "./components/Header";
+import RouterComponent from "./components/RouterComponent";
 
 function App() {
-  return (
-    <div className="app">
-      <div className="browser">
-        <div className="tabs">
-          <div className="tab">
-            <a>Home</a>
-          </div>
-          <div className="tab">
-            <a>About</a>
-          </div>
-          <div className="tab">
-            <a>Features</a>
-          </div>
-        </div>
 
-        <div className="viewport">Pages Go Here</div>
-      </div>
-    </div>
-  );
+    return (
+        <div className="app">
+            <div className="browser">
+                <Header/>
+                <RouterComponent/>
+            </div>
+
+        </div>
+    );
 }
 
 export default App;
